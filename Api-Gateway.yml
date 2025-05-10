@@ -7,15 +7,15 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user-service
+        - id: User-Service
           uri: http://localhost:8081
           predicates:
             - Path=/users/**
-        - id: order-service
+        - id: Order-Service
           uri: http://localhost:8082
           predicates:
             - Path=/orders/**
-        - id: inventory-service
+        - id: Inventory-Service
           uri: http://localhost:8083
           predicates:
             - Path=/products/**
